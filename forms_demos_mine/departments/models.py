@@ -19,7 +19,8 @@ class MuscleCar(models.Model):
 
     slug = models.SlugField(
         unique=True,
-        blank=True, )
+        blank=True, 
+    )
 
     def save(self, *args, **kwargs):
         # Create/Update - in order to use the ID when slug is not provided
